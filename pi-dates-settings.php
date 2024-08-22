@@ -12,6 +12,11 @@ if (!defined('ABSPATH')) {
 }
 
 function pi_dates_register_settings() {
+    register_setting(
+        'pi_dates_options',
+        'pi_dates_options',
+        'PiDates\\pi_dates_sanitize_options'
+    );
 
     add_settings_section(
         'pi_dates_main_section',
@@ -23,24 +28,24 @@ function pi_dates_register_settings() {
     add_settings_field(
         'pi_dates_wp_timezone',
         'Time Zone',
-        'pi_dates_wp_timezone_cb',
-        'PiDates\\pi-dates-settings',
+        'PiDates\\pi_dates_wp_timezone_cb',
+        'pi-dates-settings',
         'pi_dates_main_section'
     );
 
     add_settings_field(
         'pi_dates_wp_date_format',
         'Date Format',
-        'pi_dates_wp_date_format_cb',
-        'PiDates\\pi-dates-settings',
+        'PiDates\\pi_dates_wp_date_format_cb',
+        'pi-dates-settings',
         'pi_dates_main_section'
     );
 
     add_settings_field(
         'pi_dates_wp_time_format',
         'Time Format',
-        'pi_dates_wp_time_format_cb',
-        'PiDates\\pi-dates-settings',
+        'PiDates\\pi_dates_wp_time_format_cb',
+        'pi-dates-settings',
         'pi_dates_main_section'
     );
 }
@@ -48,25 +53,22 @@ function pi_dates_register_settings() {
 add_action('admin_init', 'PiDates\\pi_dates_register_settings');
 
 function pi_dates_main_section_cb() {
-    echo '<p>Pi Dates uses your WordPress time zone, date, and time settings. To change these settings, please use the WordPress General Settings page.</p>';
+    echo '<p>Pi Dates uses your WordPress time zone, date, and time settings.</p>';
 }
 
 function pi_dates_wp_timezone_cb() {
     $timezone = wp_timezone_string();
-    echo '<input type="text" value="' . esc_attr($timezone) . '" readonly>';
-    echo '<p class="description">Set in <a href="' . admin_url('options-general.php') . '">General Settings</a></p>';
+    echo '<p>' . esc_attr($timezone) . '</p>';
 }
 
 function pi_dates_wp_date_format_cb() {
     $date_format = get_option('date_format');
-    echo '<input type="text" value="' . esc_attr($date_format) . '" readonly>';
-    echo '<p class="description">Set in <a href="' . admin_url('options-general.php') . '">General Settings</a></p>';
+    echo '<p>' . esc_attr($date_format) . '</p>';
 }
 
 function pi_dates_wp_time_format_cb() {
     $time_format = get_option('time_format');
-    echo '<input type="text" value="' . esc_attr($time_format) . '" readonly>';
-    echo '<p class="description">Set in <a href="' . admin_url('options-general.php') . '">General Settings</a></p>';
+    echo '<p>' . esc_attr($time_format) . '</p>';
 }
 
 // The HTML for the settings page

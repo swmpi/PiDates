@@ -2,7 +2,7 @@
 /*
 Plugin Name:  Pi Dates
 Description:  A collection of useful shortcodes for displaying days, dates, and times.
-Version:      0.1.2
+Version:      0.2.2
 Author:       sm314
 Author:       https://sm314.com
 License:      GPL v2 or later
@@ -19,7 +19,7 @@ if (!defined('ABSPATH')) {
 
 final class Pi_Dates
 {
-    const VERSION = '0.1.2';
+    const VERSION = '0.2.2';
     const REQUIRED_WP_VERSION = '5.3';
     private static $instance;
     private function __construct() {

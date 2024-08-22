@@ -153,7 +153,7 @@ add_shortcode('pi_day', 'PiDates\\get_name_day');
 // Return day and date in the format Monday the 21st 
 function get_date_d(){
     try {
-        return esc_html(wp_date("l \t\h\e jS"));
+        return esc_html(wp_date('l \t\h\e jS'));
     } catch (Exception $e) {
         return pi_dates_error_handler($e, 'Date unavailable');
     }
@@ -163,7 +163,7 @@ add_shortcode('pi_date_d', 'PiDates\\get_date_d');
 // Return month and date in the format 21st of May
 function get_date_m(){
     try {
-        return esc_html(wp_date("jS \o\f F"));
+        return esc_html(wp_date('jS \o\f F'));
     } catch (Exception $e) {
         return pi_dates_error_handler($e, 'Date unavailable');
     }
@@ -173,7 +173,7 @@ add_shortcode('pi_date_m', 'PiDates\\get_date_m');
 // Return day, month and date in the format Monday the 21st of May
 function get_date_dm(){
     try {
-        return esc_html(wp_date("l \t\h\e jS \o\f F"));
+        return esc_html(wp_date('l \t\h\e jS \o\f F'));
     } catch (Exception $e) {
         return pi_dates_error_handler($e, 'Date unavailable');
     }
