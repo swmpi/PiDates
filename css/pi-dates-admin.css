@@ -1,0 +1,51 @@
+/**
+ * Pi Dates admin styles
+ *
+ * Only loaded on the Pi Dates settings screen. Every selector is scoped to the
+ * body class WordPress generates for that screen, so nothing here can affect
+ * another plugin's page if the enqueue check is ever loosened.
+ *
+ * Colours are taken from the WordPress admin palette so the page still looks
+ * native: #f0f0f1 is the standard disabled field background, #50575e the muted
+ * text colour, #8c8f94 the neutral border.
+ */
+
+/* Read only fields
+   ---------------------------------------------------------------- */
+
+/*
+These inputs mirror values owned by the WordPress General Settings screen and
+cannot be edited here. Without this they are indistinguishable from an editable
+field, so people click them and wonder why nothing happens.
+*/
+.settings_page_pi-dates-settings .pi-dates-readonly {
+	background-color: #f0f0f1;
+	border-color: #dcdcde;
+	color: #50575e;
+	cursor: default;
+	box-shadow: none;
+}
+
+/*
+The field is still reachable by keyboard, so focus stays visible. It is rendered
+in the neutral grey rather than the usual blue, which would suggest the field is
+ready for input.
+*/
+.settings_page_pi-dates-settings .pi-dates-readonly:focus {
+	border-color: #8c8f94;
+	box-shadow: 0 0 0 1px #8c8f94;
+	outline: 2px solid transparent; /* visible in Windows High Contrast mode */
+}
+
+/* Shortcode reference table
+   ---------------------------------------------------------------- */
+
+/*
+The first column holds short shortcode tags. Without this the table gives it an
+equal share of the width and the descriptions wrap early.
+*/
+.settings_page_pi-dates-settings .pi-dates-shortcodes td:first-child,
+.settings_page_pi-dates-settings .pi-dates-shortcodes th:first-child {
+	width: 1%;
+	white-space: nowrap;
+}

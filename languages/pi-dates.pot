@@ -1,0 +1,195 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the Pi Dates package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Pi Dates 0.3.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-01 19:52+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: pi-dates.php:61
+msgid "Pi Dates plugin error:"
+msgstr ""
+
+#. translators: 1: WordPress version running on the site, 2: minimum WordPress version required by the plugin
+#: pi-dates.php:64
+#, php-format
+msgid ""
+"Your site is running WordPress version %1$s, but this plugin requires "
+"version %2$s or higher."
+msgstr ""
+
+#: pi-dates.php:69
+msgid ""
+"Please update your WordPress installation or deactivate the Pi Dates plugin."
+msgstr ""
+
+#: pi-dates.php:161
+msgid "Pi Dates Settings"
+msgstr ""
+
+#: pi-dates.php:162
+msgid "Pi Dates"
+msgstr ""
+
+#: pi-dates-settings.php:44
+msgid "Time Zone"
+msgstr ""
+
+#: pi-dates-settings.php:53
+msgid "Date Format"
+msgstr ""
+
+#: pi-dates-settings.php:62
+msgid "Time Format"
+msgstr ""
+
+#: pi-dates-settings.php:94
+msgid ""
+"Pi Dates uses your WordPress time zone, date, and time settings. To change "
+"these settings, please use the WordPress General Settings page."
+msgstr ""
+
+#: pi-dates-settings.php:110
+msgid "General Settings"
+msgstr ""
+
+#. translators: %s: link to the WordPress General Settings screen, with the link text "General Settings"
+#: pi-dates-settings.php:123
+#, php-format
+msgid "Set in %s"
+msgstr ""
+
+#: pi-dates-settings.php:154
+msgid "Current year in YYYY format"
+msgstr ""
+
+#: pi-dates-settings.php:155
+msgid "Current year in YY format"
+msgstr ""
+
+#: pi-dates-settings.php:156
+msgid "Current month in 01 to 12 format"
+msgstr ""
+
+#: pi-dates-settings.php:157
+msgid "Current month in 1 to 12 format"
+msgstr ""
+
+#: pi-dates-settings.php:158
+msgid "Abbreviated month name (e.g., Jan)"
+msgstr ""
+
+#: pi-dates-settings.php:159
+msgid "Full month name"
+msgstr ""
+
+#: pi-dates-settings.php:160
+msgid "Current day in 01 to 31 format"
+msgstr ""
+
+#: pi-dates-settings.php:161
+msgid "Current day in 1 to 31 format"
+msgstr ""
+
+#: pi-dates-settings.php:162
+msgid "Current day with ordinal (01st, 02nd, etc.)"
+msgstr ""
+
+#: pi-dates-settings.php:163
+msgid "Current day with ordinal (1st, 2nd, etc.)"
+msgstr ""
+
+#: pi-dates-settings.php:164
+msgid "Abbreviated day name (e.g., Mon)"
+msgstr ""
+
+#: pi-dates-settings.php:165
+msgid "Full day name"
+msgstr ""
+
+#: pi-dates-settings.php:166
+msgid "Day and date (e.g., Monday the 21st)"
+msgstr ""
+
+#: pi-dates-settings.php:167
+msgid "Month and date (e.g., 21st of May)"
+msgstr ""
+
+#: pi-dates-settings.php:168
+msgid "Day, month and date (e.g., Monday the 21st of May)"
+msgstr ""
+
+#. translators: %s: link to the WordPress General Settings screen, with the link text "WordPress General Settings"
+#: pi-dates-settings.php:190
+#, php-format
+msgid "To change these settings, please visit the %s page."
+msgstr ""
+
+#: pi-dates-settings.php:193
+msgid "WordPress General Settings"
+msgstr ""
+
+#: pi-dates-settings.php:200
+msgid "Available Shortcodes"
+msgstr ""
+
+#: pi-dates-settings.php:204
+msgid "Shortcode"
+msgstr ""
+
+#: pi-dates-settings.php:205
+msgid "Description"
+msgstr ""
+
+#: pi-dates-settings.php:206
+msgid "Example Output"
+msgstr ""
+
+#: pi-dates-shortcodes.php:83 pi-dates-shortcodes.php:89
+msgid "Year unavailable"
+msgstr ""
+
+#: pi-dates-shortcodes.php:97 pi-dates-shortcodes.php:103
+#: pi-dates-shortcodes.php:109 pi-dates-shortcodes.php:115
+msgid "Month unavailable"
+msgstr ""
+
+#: pi-dates-shortcodes.php:123 pi-dates-shortcodes.php:129
+#: pi-dates-shortcodes.php:135 pi-dates-shortcodes.php:141
+#: pi-dates-shortcodes.php:147 pi-dates-shortcodes.php:153
+msgid "Day unavailable"
+msgstr ""
+
+#. translators: date() format string. Escape any literal letters with a backslash, as in \t\h\e for the word "the". l = weekday name, jS = day of month with ordinal suffix.
+#: pi-dates-shortcodes.php:170
+msgctxt "date format"
+msgid "l \\t\\h\\e jS"
+msgstr ""
+
+#: pi-dates-shortcodes.php:171 pi-dates-shortcodes.php:181
+#: pi-dates-shortcodes.php:191
+msgid "Date unavailable"
+msgstr ""
+
+#. translators: date() format string. Escape any literal letters with a backslash, as in \o\f for the word "of". jS = day of month with ordinal suffix, F = month name.
+#: pi-dates-shortcodes.php:180
+msgctxt "date format"
+msgid "jS \\o\\f F"
+msgstr ""
+
+#. translators: date() format string. Escape any literal letters with a backslash, as in \t\h\e and \o\f. l = weekday name, jS = day of month with ordinal suffix, F = month name.
+#: pi-dates-shortcodes.php:190
+msgctxt "date format"
+msgid "l \\t\\h\\e jS \\o\\f F"
+msgstr ""
